@@ -1064,7 +1064,9 @@
 </style>
 
 <body id="body" style="display:flex; align-items: center;justify-content: center;height: 100vh;">
-
+    <audio id="myAudio">
+        <source src="./song.mp3" type="audio/mpeg">
+    </audio>
     <div id="btn" style="width:30%;">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
             viewBox="0 0 150 88.4" enable-background="new 0 0 150 88.4" xml:space="preserve" style="fill: rgb(0, 0, 0);"
@@ -1093,7 +1095,7 @@
 
     <div class="christmas">
         <div class="message">
-            <h1>Merry Christmas For You!</h1>
+            <h1>Merry Christmas For VyVy♥</h1>
             <h2>from V_Q_9 with LOVE♥</h2>
         </div>
         <div class="window ">
@@ -1119,7 +1121,9 @@
 
     </div>
     <script>
+        var x = document.getElementById("myAudio");
         document.querySelector("#btn").onclick = function () {
+            x.play();
             document.querySelector("#btn").style.display = 'none';
             document.querySelector(".christmas").style.display = 'block';
             document.querySelector("#body").style.background = "#de2f32";
